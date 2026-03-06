@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotton Bombs — Explode Your Taste</title>
+  <meta name="description" content="Cotton Bombs — a premium cafe experience where bold flavors meet explosive creativity. Cotton candy coffee, bomb lattes, and more." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💣</text></svg>" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-text" aria-hidden="true">
+      <span style="animation-delay:0s">C</span><span style="animation-delay:0.05s">O</span><span style="animation-delay:0.1s">T</span><span style="animation-delay:0.15s">T</span><span style="animation-delay:0.2s">O</span><span style="animation-delay:0.25s">N</span><span style="animation-delay:0.35s">&nbsp;</span><span style="animation-delay:0.4s">B</span><span style="animation-delay:0.45s">O</span><span style="animation-delay:0.5s">M</span><span style="animation-delay:0.55s">B</span><span style="animation-delay:0.6s">S</span>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo" data-cursor-hover>Cotton Bombs</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-cursor-hover>About</a>
+      <a href="#menu" data-cursor-hover>Menu</a>
+      <a href="#gallery" data-cursor-hover>Gallery</a>
+      <a href="#contact" data-cursor-hover>Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.png" alt="Cotton Bombs ambiance" />
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Smoke Particles (generated via JS) -->
+    <div class="smoke-container" id="smokeContainer"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span>Premium Cafe Experience</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span>Cotton</span></span>
+        <span class="line"><span class="outline-text">Bombs</span></span>
+      </h1>
+      <p class="hero-tagline">Explode Your Taste.</p>
+      <a href="#menu" class="btn-primary" data-cursor-hover>
+        <span>View Menu</span>
+        <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Cotton Candy Coffee</span><div class="dot"></div>
+        <span>Bomb Latte</span><div class="dot"></div>
+        <span>Dark Roast Blast</span><div class="dot"></div>
+        <span>Sugar Cloud Shakes</span><div class="dot"></div>
+        <span>Explode Your Taste</span><div class="dot"></div>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>Cotton Candy Coffee</span><div class="dot"></div>
+        <span>Bomb Latte</span><div class="dot"></div>
+        <span>Dark Roast Blast</span><div class="dot"></div>
+        <span>Sugar Cloud Shakes</span><div class="dot"></div>
+        <span>Explode Your Taste</span><div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="section-header reveal">
+      <p class="section-label">Our Story</p>
+      <h2 class="section-title">Born to<br />Disrupt</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-image reveal reveal-delay-1">
+        <img src="images/about-cafe.png" alt="Inside Cotton Bombs cafe" />
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+      </div>
+
+      <div class="about-text reveal reveal-delay-2">
+        <h3>We don't just make coffee — we detonate flavor.</h3>
+        <p>Cotton Bombs was born from a rebellious idea: why should coffee be boring? We fuse artisan roasts with explosive creativity — cotton candy clouds dissolving into bold espresso, hand-crafted shakes that erupt with flavor, and an atmosphere that hits different.</p>
+        <p>Every cup is an experience. Every visit is an event. We're not your average cafe — we're the blast radius of good taste.</p>
+
+        <div class="about-stats">
+          <div class="stat-item reveal reveal-delay-2">
+            <h4>50+</h4>
+            <p>Unique Drinks</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <h4>12K</h4>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-4">
+            <h4>4.9</h4>
+            <p>Star Rating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Divider -->
+  <div class="parallax-section" data-parallax>
+    <div class="parallax-bg">
+      <img src="images/hero-bg.png" alt="" />
+    </div>
+    <div class="parallax-content reveal">
+      <h2 class="neon-glow">Every Cup Is<br />An Explosion</h2>
+      <a href="#menu" class="btn-outline" data-cursor-hover>
+        <span>Explore the Menu</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="section menu" id="menu">
+    <div class="section-header reveal">
+      <p class="section-label">The Menu</p>
+      <h2 class="section-title">Choose Your<br />Weapon</h2>
+    </div>
+
+    <div class="menu-grid">
+      <!-- Card 1 -->
+      <div class="menu-card reveal reveal-delay-1" data-cursor-hover>
+        <div class="menu-card-image">
+          <img src="images/cotton-candy-coffee.png" alt="Cotton Candy Coffee" />
+          <span class="menu-card-tag">Signature</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>Cotton Candy Coffee</h3>
+          <p>Hand-spun cotton candy melting over rich double-shot espresso. A sweet explosion in every sip.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$7.50</span>
+            <button class="menu-add-btn" aria-label="Add to cart" data-cursor-hover>+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="menu-card reveal reveal-delay-2" data-cursor-hover>
+        <div class="menu-card-image">
+          <img src="images/bomb-latte.png" alt="Bomb Latte" />
+          <span class="menu-card-tag">Best Seller</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>Bomb Latte</h3>
+          <p>Our signature latte with a smoky caramel drizzle and a shot of vanilla bean. Detonates on contact.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$6.90</span>
+            <button class="menu-add-btn" aria-label="Add to cart" data-cursor-hover>+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="menu-card reveal reveal-delay-3" data-cursor-hover>
+        <div class="menu-card-image">
+          <img src="images/dark-roast.png" alt="Dark Roast Blast" />
+          <span class="menu-card-tag">Bold</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>Dark Roast Blast</h3>
+          <p>Triple-filtered dark roast with deep chocolate notes and a charcoal undertone. No mercy.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$5.50</span>
+            <button class="menu-add-btn" aria-label="Add to cart" data-cursor-hover>+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="menu-card reveal reveal-delay-4" data-cursor-hover>
+        <div class="menu-card-image">
+          <!-- Re-use cotton candy image with different filter applied via CSS -->
+          <img src="images/cotton-candy-coffee.png" alt="Sugar Cloud Shake" style="filter: hue-rotate(20deg) brightness(1.1);" />
+          <span class="menu-card-tag">New</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>Sugar Cloud Shakes</h3>
+          <p>Thick milkshake topped with cotton candy clouds, whipped cream & crystallized sugar. Pure bliss.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$8.90</span>
+            <button class="menu-add-btn" aria-label="Add to cart" data-cursor-hover>+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="section-header reveal">
+      <p class="section-label">Gallery</p>
+      <h2 class="section-title">The Vibe</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal reveal-delay-1" data-cursor-hover>
+        <img src="images/about-cafe.png" alt="Cotton Bombs interior" />
+        <div class="gallery-item-overlay"><div class="gallery-zoom-icon">⊕</div></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" data-cursor-hover>
+        <img src="images/cotton-candy-coffee.png" alt="Cotton Candy Coffee" />
+        <div class="gallery-item-overlay"><div class="gallery-zoom-icon">⊕</div></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3" data-cursor-hover>
+        <img src="images/bomb-latte.png" alt="Bomb Latte" />
+        <div class="gallery-item-overlay"><div class="gallery-zoom-icon">⊕</div></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1" data-cursor-hover>
+        <img src="images/dark-roast.png" alt="Dark Roast" />
+        <div class="gallery-item-overlay"><div class="gallery-zoom-icon">⊕</div></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" data-cursor-hover>
+        <img src="images/hero-bg.png" alt="Cotton Bombs setup" />
+        <div class="gallery-item-overlay"><div class="gallery-zoom-icon">⊕</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee 2 -->
+  <div class="marquee">
+    <div class="marquee-track" style="animation-direction: reverse;">
+      <div class="marquee-content">
+        <span>Visit Us Today</span><div class="dot"></div>
+        <span>Open 7 Days</span><div class="dot"></div>
+        <span>Free Wifi</span><div class="dot"></div>
+        <span>Live Music Fridays</span><div class="dot"></div>
+        <span>Private Events</span><div class="dot"></div>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>Visit Us Today</span><div class="dot"></div>
+        <span>Open 7 Days</span><div class="dot"></div>
+        <span>Free Wifi</span><div class="dot"></div>
+        <span>Live Music Fridays</span><div class="dot"></div>
+        <span>Private Events</span><div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact & Location Section -->
+  <section class="section contact" id="contact">
+    <div class="section-header reveal">
+      <p class="section-label">Find Us</p>
+      <h2 class="section-title">Drop By.<br />Blow Up.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal reveal-delay-1">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>42 Explosion Ave, Downtown<br />New York, NY 10001</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:hello@cottonbombs.com">hello@cottonbombs.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Hours</h4>
+            <p>Mon – Fri: 7am – 10pm<br />Sat – Sun: 8am – 11pm</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" data-cursor-hover aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" data-cursor-hover aria-label="Twitter / X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg>
+          </a>
+          <a href="#" class="social-link" data-cursor-hover aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+          <a href="#" class="social-link" data-cursor-hover aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-container reveal reveal-delay-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-73.99185!3d40.74844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMzAuNyJX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Cotton Bombs location"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2>Cotton Bombs</h2>
+        <p>Where bold flavors meet explosive creativity. Not your average cafe — we're the blast radius of good taste.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#hero" data-cursor-hover>Home</a></li>
+          <li><a href="#about" data-cursor-hover>About</a></li>
+          <li><a href="#menu" data-cursor-hover>Menu</a></li>
+          <li><a href="#gallery" data-cursor-hover>Gallery</a></li>
+          <li><a href="#contact" data-cursor-hover>Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#menu" data-cursor-hover>Cotton Candy Coffee</a></li>
+          <li><a href="#menu" data-cursor-hover>Bomb Latte</a></li>
+          <li><a href="#menu" data-cursor-hover>Dark Roast Blast</a></li>
+          <li><a href="#menu" data-cursor-hover>Sugar Cloud Shakes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#" data-cursor-hover>Instagram</a></li>
+          <li><a href="#" data-cursor-hover>Twitter / X</a></li>
+          <li><a href="#" data-cursor-hover>TikTok</a></li>
+          <li><a href="#" data-cursor-hover>Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Cotton Bombs. All rights reserved.</p>
+      <p>Designed with 💣 and ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
